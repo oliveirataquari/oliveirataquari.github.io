@@ -1407,6 +1407,11 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+#resume {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
 .resume .resume-item {
   margin-bottom: 3rem;
 }
@@ -1417,7 +1422,7 @@ section,
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   position: relative;
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
 }
 
 .resume .resume-item .resume-title::after {
@@ -1457,7 +1462,7 @@ section,
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
 }
 
 .resume .resume-item article h5 {
@@ -1467,7 +1472,7 @@ section,
   display: inline-block;
   font-weight: 600;
   margin: 0.5rem 0;
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
   border-radius: 4px;
 }
 
@@ -1548,22 +1553,20 @@ section,
   }
 }
 /* Tiago .resume */
-.resume {
-  background:#fff;
-  color:#333 !important;
-}
-.resume h1,
+/*.resume h1,
 .resume h2,
 .resume h3,
 .resume-content h4,
 .resume p {
   color:#333 !important;
-}
+} */
 .education-item h5,
 .education-item .institution {
   display:none !important;
 }
-
+.resume p {
+  opacity: .7;
+}
 
 /*--------------------------------------------------------------
 # Services Section
@@ -3005,12 +3008,8 @@ a.portfolio-details-link,
 	display:none !important;
 }
 
-#resume h4 i {
-  color:var(--accent-color);
-}
-#resume p {
-  opacity: .7;
-}
+
+
 
 .botao-contato {
   color:#fff;
