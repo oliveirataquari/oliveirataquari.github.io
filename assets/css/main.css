@@ -714,6 +714,11 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero {
+  background: url(../img/bg-hero1.jpg) no-repeat;
+  background-size: cover;
+}
+
 .hero {
   padding: 80px 0;
   min-height: 100vh;
@@ -895,23 +900,31 @@ section,
   color: var(--accent-color);
 }
 
+
 .hero .hero-image .floating-elements .floating-card.design {
-  top: 10%;
-  right: -10%;
+  top: -90px;
+  right: 30%;
   animation-delay: 0s;
 }
 
 .hero .hero-image .floating-elements .floating-card.code {
   bottom: 30%;
-  left: -15%;
+  left: -1%;
   animation-delay: 1s;
 }
 
 .hero .hero-image .floating-elements .floating-card.creativity {
-  top: 60%;
-  right: -5%;
+  top: 20%;
+  right: 45%;
   animation-delay: 2s;
 }
+
+.hero .hero-image .floating-elements .floating-card.branding {
+  top: 70px;
+  right: 5%;
+  animation-delay: 2s;
+}
+
 
 @media (max-width: 992px) {
   .hero .hero-image .floating-elements .floating-card {
@@ -1408,7 +1421,9 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 #resume {
-  background-color: var(--accent-color);
+  background-color: #5E61D2;
+  background: url(../img/bg-resume1.jpg) no-repeat left bottom #5E61D2;
+  background-size:contain;
   color: #fff;
 }
 
