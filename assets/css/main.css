@@ -147,7 +147,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: rgba(0, 0, 0, 0.3);
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 15px 0;
@@ -665,8 +665,8 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 100px;
+  padding: 90px 0;
+  scroll-margin-top: 90px;
   overflow: clip;
 }
 
@@ -721,9 +721,11 @@ section,
 
 .hero {
   padding: 80px 0;
+  padding-top: 40px;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  margin-top: -85px;
 }
 
 .hero .hero-content h1 {
@@ -885,6 +887,8 @@ section,
 .hero .hero-image .floating-elements .floating-card {
   position: absolute;
   background: var(--surface-color);
+  background: #fff;
+  color: #051117;
   padding: 15px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
@@ -904,27 +908,31 @@ section,
 .hero .hero-image .floating-elements .floating-card.design {
   top: -90px;
   right: 30%;
-  animation-delay: 0s;
+  animation-delay: 1s;
 }
 
 .hero .hero-image .floating-elements .floating-card.code {
   bottom: 30%;
   left: -1%;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .hero .hero-image .floating-elements .floating-card.creativity {
   top: 20%;
   right: 45%;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .hero .hero-image .floating-elements .floating-card.branding {
   top: 70px;
   right: 5%;
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
-
+.hero .hero-image .floating-elements .floating-card.ux {
+  top: 90px;
+  right: 90%;
+  animation-delay: 5s;
+}
 
 @media (max-width: 992px) {
   .hero .hero-image .floating-elements .floating-card {
@@ -1422,7 +1430,7 @@ section,
 --------------------------------------------------------------*/
 #resume {
   background-color: #5E61D2;
-  background: url(../img/bg-resume1.jpg) no-repeat left bottom #5E61D2;
+  background: url(../img/bg-resume1.jpg) no-repeat left bottom #1387C1;
   background-size:contain;
   color: #fff;
 }
