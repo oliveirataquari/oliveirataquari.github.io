@@ -1596,6 +1596,21 @@ section,
   opacity: .7;
 }
 
+
+/*--------------------------------------------------------------
+# Comparison Table Section (Redes sociais x Website)
+--------------------------------------------------------------*/
+#comparison .section-title h3, .comparison .section-title p {
+  color: #051117;
+}
+#comparison .section-title p {
+  opacity: .6;
+}
+#comparison .container {
+  padding-bottom: 0px;
+}
+
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
