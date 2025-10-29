@@ -29,6 +29,7 @@
   --accent-color: #1387c1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #141f26; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --amarelo-color: #FFCB17; /* Amarelo padrão para destaques em botão etc */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -580,7 +581,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--amarelo-color);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -590,6 +591,7 @@ h6 {
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
+  color:#000;
   line-height: 0;
 }
 
@@ -721,7 +723,6 @@ section,
 
 .hero {
   padding: 80px 0;
-  padding-top: 40px;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -751,6 +752,7 @@ section,
   background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%));
   border-radius: 2px;
 }
+
 
 @media (max-width: 768px) {
   .hero .hero-content h1 {
@@ -812,8 +814,8 @@ section,
 
 .hero .hero-actions .btn.btn-outline {
   background: transparent;
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--amarelo-color);
+  border-color: var(--amarelo-color);
 }
 
 .hero .hero-actions .btn.btn-outline:hover {
@@ -1587,6 +1589,9 @@ section,
 .education-item .institution {
   display:none !important;
 }
+.education-item i {
+  color: var(--amarelo-color);
+}
 .resume p {
   opacity: .7;
 }
@@ -2274,7 +2279,7 @@ section,
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding: 0;
   list-style: none;
 }
