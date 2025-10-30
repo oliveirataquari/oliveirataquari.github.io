@@ -753,11 +753,15 @@ section,
   border-radius: 2px;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0px;
+  }
+}
 
 @media (max-width: 768px) {
   .hero .hero-content h1 {
     font-size: 2.5rem;
-    margin-top: 0px !important;
   }
 }
 
