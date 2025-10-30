@@ -708,7 +708,7 @@ section,
   font-size: 1.125rem;
   line-height: 1.8;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
   text-wrap: balance;
 }
@@ -1600,7 +1600,7 @@ section,
 /*--------------------------------------------------------------
 # Comparison Table Section (Redes sociais x Website)
 --------------------------------------------------------------*/
-#comparison .section-title h3, .comparison .section-title p {
+#comparison .section-title h4, .comparison .section-title p {
   color: #051117;
 }
 #comparison .section-title p {
@@ -1609,6 +1609,27 @@ section,
 #comparison .container {
   padding-bottom: 0px;
 }
+
+#comparison .wxr {
+  width: 280px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--amarelo-color);
+  display: inline-block;
+}
+#comparison .wxr i {
+  margin-right: 5px;
+}
+
+@media (max-width: 991.98px) {
+  #comparison .wxr {
+    width: 180px;
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 18px;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -3063,4 +3084,3 @@ a.portfolio-details-link,
 .botao-contato i {
   margin-right:5px;
 }
-
