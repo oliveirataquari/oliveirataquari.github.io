@@ -179,6 +179,7 @@ h6 {
 
 .header .header-social-links a {
  /* color: color-mix(in srgb, var(--default-color), transparent 40%); */
+  color:var(--amarelo-color);
   padding-left: 25px;
   display: inline-block;
   transition: 0.3s;
