@@ -1634,6 +1634,11 @@ section,
     display: inline-block;
     font-size: 18px;
   }
+
+  #comparison .container, #comparison .section-title {
+    padding: 0px !important;
+  }
+
 }
 
 
