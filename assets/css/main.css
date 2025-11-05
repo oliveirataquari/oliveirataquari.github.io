@@ -714,6 +714,38 @@ section,
   text-wrap: balance;
 }
 
+
+.section-title2 {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title2 h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--heading-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .section-title2 h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.section-title2 p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* max-width: 900px; */
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1606,7 +1638,7 @@ section,
 /*--------------------------------------------------------------
 # Comparison Table Section (Redes sociais x Website)
 --------------------------------------------------------------*/
-#comparison .section-title h4, .comparison .section-title p {
+#comparison .section-title h4, .comparison .section-title p, .section-title2 p {
   color: #051117;
 }
 #comparison .section-title p {
