@@ -1699,7 +1699,7 @@ section,
   top: 0;
   height: 100%;
   width: 4px;
-  background-color: var(--accent-color);
+  background-color: var(--amarelo-color);
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
@@ -1715,8 +1715,9 @@ section,
 }
 
 .services .service-item:hover .service-icon {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  background-color: var(--amarelo-color);
+  /* color: var(--contrast-color); */
+  color:#222;
   transform: rotateY(180deg);
 }
 
@@ -3112,7 +3113,8 @@ section,
 /* ITENS OCULTOS */
 .hide,
 a.portfolio-details-link,
-#resume .resume-title
+#resume .resume-title,
+#services .service-link
 {
 	display:none !important;
 }
