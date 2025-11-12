@@ -778,11 +778,12 @@ section,
 }
 
 .hero .hero-content h1 .highlight {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--accent-color);
-  position: relative;
+  /* position: relative; */
 }
 
+/*
 .hero .hero-content h1 .highlight::after {
   content: "";
   position: absolute;
@@ -793,6 +794,7 @@ section,
   background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%));
   border-radius: 2px;
 }
+*/
 
 @media (max-width: 768px) {
   .hero {
