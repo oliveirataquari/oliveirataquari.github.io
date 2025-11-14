@@ -3137,7 +3137,11 @@ a.portfolio-details-link,
 	display:none !important;
 }
 
-
+@media (max-width: 768px) {
+  #portfolio .hide-on-mobile {
+  display:none;
+  }
+}
 
 
 .botao-contato {
@@ -3149,3 +3153,6 @@ a.portfolio-details-link,
 .botao-contato i {
   margin-right:5px;
 }
+
+
+
