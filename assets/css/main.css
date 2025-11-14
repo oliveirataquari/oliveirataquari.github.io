@@ -2490,6 +2490,17 @@ section,
   color: var(--accent-color);
 }
 
+.portfolio .portfolio-card .portfolio-img .portfolio-overlay {
+  flex-direction: column; /* Ícone em cima, texto em baixo */
+}
+
+.portfolio .portfolio-card .portfolio-img .portfolio-overlay .overlay-text {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  text-align: center;
+}
+
 .portfolio .btn-primary {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
