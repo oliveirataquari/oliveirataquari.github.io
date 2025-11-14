@@ -3137,11 +3137,19 @@ a.portfolio-details-link,
 	display:none !important;
 }
 
+.btn-mais-portfolio {
+  display: none;
+}
+
 @media (max-width: 768px) {
   #portfolio .hide-on-mobile {
   display:none;
   }
+  .btn-mais-portfolio {
+    display: block;
+  }
 }
+
 
 
 .botao-contato {
