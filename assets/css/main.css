@@ -701,7 +701,7 @@ section,
 .section-title h2 {
   font-size: 3.5rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1;
   color: var(--heading-color);
   margin-bottom: 1.5rem;
   letter-spacing: -1px;
@@ -1646,7 +1646,7 @@ section,
 
 
 /*--------------------------------------------------------------
-# Comparison Table Section (Redes sociais x Website)
+# Comparison Table Section (tabela redes sociais x Website)
 --------------------------------------------------------------*/
 #comparison .section-title h4, .comparison .section-title p, .section-title2 p {
   color: #051117;
