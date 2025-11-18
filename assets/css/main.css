@@ -701,7 +701,7 @@ section,
 .section-title h2 {
   font-size: 3.5rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   color: var(--heading-color);
   margin-bottom: 1.5rem;
   letter-spacing: -1px;
@@ -1623,6 +1623,9 @@ section,
 
   .resume article::before {
     left: -2rem !important;
+  }
+  .resume .section-title {
+    padding-bottom: 1px;
   }
 }
 /* Tiago .resume */
