@@ -286,7 +286,7 @@ h6 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--nav-hover-color);
+    background-color: var(--amarelo-color);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -1644,7 +1644,7 @@ section,
   color: var(--amarelo-color);
 }
 .resume p {
-  opacity: .7;
+  opacity: .8;
 }
 
 
@@ -3166,4 +3166,13 @@ a.portfolio-details-link,
 }
 
 
-
+.logox {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+.logox img {
+  max-width: 250px;
+  margin-top:-95px;
+  position: relative;
+}
