@@ -761,6 +761,31 @@
     </section><!-- /Faq Section -->
 
 
+    
+    <section id="insta" class="section">
+
+      <div id="insta-feed"></div>
+
+        <script>
+        fetch('https://rsshub.app/instagram/user/SEU_USUARIO')
+          .then(res => res.text())
+          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+          .then(data => {
+            const items = data.querySelectorAll("item");
+            let html = "";
+            for (let i = 0; i < 6; i++) {
+              const link = items[i].querySelector("link").textContent;
+              const img = items[i].querySelector("description").textContent.match(/src="([^"]+)"/)[1];
+              html += `<a href="${link}" target="_blank"><img src="${img}" /></a>`;
+            }
+            document.getElementById("insta-feed").innerHTML = html;
+          });
+        </script>
+
+    </section>
+
+
+
 
 
 

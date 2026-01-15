@@ -3176,3 +3176,15 @@ a.portfolio-details-link,
   margin-top:-95px;
   position: relative;
 }
+
+
+#insta-feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#insta-feed img {
+  width: 100%;
+  border-radius: 6px;
+}
