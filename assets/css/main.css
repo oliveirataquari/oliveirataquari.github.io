@@ -18,9 +18,9 @@
 */
 
   /*--default-font: "Alan Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-	--default-font: "Stack Sans Text", sans-serif;
-  --heading-font: --default-font: "Stack Sans Text", sans-serif;
-	--nav-font: --default-font: "Stack Sans Text", sans-serif;
+	--default-font: "Google Sans", sans-serif;
+  --heading-font: "Google Sans", sans-serif;
+	--nav-font: "Google Sans", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -36,7 +36,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-color: #333333;  /* The default color of the main navmenu links */
   --nav-hover-color: #1387c1; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #213642; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #051117; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -71,6 +71,9 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
 }
 
 a {
@@ -92,6 +95,7 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  font-weight: 700;
 }
 
 /* PHP Email Form Messages
@@ -150,13 +154,13 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.3);
+ /* --background-color: rgba(0, 0, 0, 0.3); */
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #fff;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+/*  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%); */
 }
 
 .header .logo {
@@ -177,20 +181,20 @@ h6 {
 
 .header .header-social-links {
   padding-right: 15px;
+  font-weight: 800;
 }
 
 .header .header-social-links a {
  /* color: color-mix(in srgb, var(--default-color), transparent 40%); */
-  color:var(--amarelo-color);
   padding-left: 25px;
   display: inline-block;
   transition: 0.3s;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .header .header-social-links a:hover {
-  color: var(--default-color);
+  color: #000;
 }
 
 .header .header-social-links a i {
@@ -220,7 +224,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(16, 26, 32, 0.9);
+  border-bottom: 1px solid #ccc;
 }
 
 /*--------------------------------------------------------------
@@ -263,13 +267,14 @@ h6 {
     font-size: 16px;
     padding: 0 2px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
+ 
   }
 
   .navmenu a i,
@@ -700,7 +705,6 @@ section,
 
 .section-title h2 {
   font-size: 3.5rem;
-  font-weight: 400;
   line-height: 1.2;
   color: var(--heading-color);
   margin-bottom: 1.5rem;
@@ -758,27 +762,31 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background: url(../img/bg-hero1.jpg) no-repeat;
+  background: url(../img/bg-hero1.jpg) center no-repeat;
   background-size: cover;
+ 
 }
 
 .hero {
-  
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  margin-top: -85px;
+  /* margin-top: -85px; */
+}
+
+.hero .hero-content {
+  margin-top:-40px;
 }
 
 .hero .hero-content h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero .hero-content h1 .highlight {
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: var(--accent-color);
   /* position: relative; */
 }
@@ -1479,10 +1487,10 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 #resume {
-  background-color: #5E61D2;
-  background: url(../img/bg-resume1.jpg) no-repeat left bottom #1387C1;
-  background-size:contain;
-  color: #fff;
+  background-color: #fff;
+  /* background: url(../img/bg-resume1.jpg) no-repeat left bottom #1387C1;
+  background-size:contain; */
+  color: #333;
 }
 
 .resume .resume-item {
@@ -1629,13 +1637,13 @@ section,
   }
 }
 /* Tiago .resume */
-/*.resume h1,
+.resume h1,
 .resume h2,
 .resume h3,
 .resume-content h4,
 .resume p {
   color:#333 !important;
-} */
+} 
 .education-item h5,
 .education-item .institution {
   display:none !important;
@@ -3154,7 +3162,6 @@ a.portfolio-details-link,
 }
 
 
-
 .botao-contato {
   color:#fff;
   background: #059652;
@@ -3168,13 +3175,9 @@ a.portfolio-details-link,
 
 .logox {
   text-align: center;
-  position: relative;
-  z-index: 99;
 }
 .logox img {
   max-width: 250px;
-  margin-top:-95px;
-  position: relative;
 }
 
 
