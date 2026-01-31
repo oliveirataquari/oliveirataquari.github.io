@@ -703,7 +703,7 @@ section,
   position: relative;
 }
 
-.section-title h2 {
+.section-title h2, h2 {
   font-size: 3.5rem;
   line-height: 1.2;
   color: var(--heading-color);
@@ -1699,6 +1699,11 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
+.services {
+  background: radial-gradient(circle at center, rgba(19, 135, 193, 0.18) 0%, #101a20 70%);
+}
+
 .services .service-item {
   display: flex;
   background-color: var(--surface-color);
