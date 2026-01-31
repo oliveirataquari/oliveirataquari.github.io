@@ -142,12 +142,13 @@
 
               <div class="resume-content" data-aos="fade-up">
                 <h2>Você já tem um site?</h2>
-                <h4>Presença digital é a base do posicionamento e credibilidade do seu negócio.</h4>
+                <h4 style="margin-bottom: 20px;">Presença digital é a base do posicionamento e credibilidade do seu negócio.</h4>
                 <p>Apesar de muito comum, basear seu negócio apenas nas redes sociais pode ser muito arriscado! 
-                  Todo negócio precisa expor sua identidade ao mundo digital de maneira organizada e livre de distrações.</p>
+                  Todo negócio precisa expor sua identidade na internet de maneira organizada e livre de distrações.</p>
                 <p>Ter um site institucional é sinônimo de segurança e atemporalidade, ou seja, enquanto as redes sociais
                   vivem mudando, seu site permanece independente e servindo suas informações por toda web através de um endereço oficial só seu!</p>
-                <p>Ter um site institucional é sinônimo de segurança e atemporalidade, ou seja, enquanto as redes s</p>
+                <p>Meu foco é atender negócios locais, desenvolvendo sites institucionais para pequenas e médias empresas 
+                  em geral, ajudando-lhe a divulgar seus produtos e serviços de forma clara, moderna e profissional.</p>
               </div>
 
           </div>
@@ -823,37 +824,11 @@
     </section><!-- /Faq Section -->
 
 
-    
-    <section id="insta" class="section">
 
-      <div id="insta-feed"></div>
-
-        <script>
-        fetch('https://rsshub.app/instagram/user/SEU_USUARIO')
-          .then(res => res.text())
-          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-          .then(data => {
-            const items = data.querySelectorAll("item");
-            let html = "";
-            for (let i = 0; i < 6; i++) {
-              const link = items[i].querySelector("link").textContent;
-              const img = items[i].querySelector("description").textContent.match(/src="([^"]+)"/)[1];
-              html += `<a href="${link}" target="_blank"><img src="${img}" /></a>`;
-            }
-            document.getElementById("insta-feed").innerHTML = html;
-          });
-        </script>
-
-    </section>
-
-
-
-<!-- Instagram Feed -->
-<div class="sk-instagram-feed hide" data-embed-id="25649500"></div>
-<script src="https://widgets.sociablekit.com/instagram-feed/widget.js" defer></script>
-<!-- End Instagram Feed -->
-
-
+    <!-- Instagram Feed -->
+    <div class="sk-instagram-feed" data-embed-id="25649500"></div>
+    <script src="https://widgets.sociablekit.com/instagram-feed/widget.js" defer></script>
+    <!-- End Instagram Feed -->
 
 
 
