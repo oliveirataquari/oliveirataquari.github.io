@@ -767,7 +767,7 @@ section,
 }
 
 .hero {
-  min-height: 90vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   /* margin-top: -85px; */
@@ -803,10 +803,10 @@ section,
 }
 */
 
-@media (max-width: 768px) {
+@media(max-width:768px) {
   .hero {
     margin-top: 0px;
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -3166,7 +3166,6 @@ a.portfolio-details-link,
   }
 }
 
-
 .botao-contato {
   color:#fff;
   background: #059652;
@@ -3176,15 +3175,6 @@ a.portfolio-details-link,
 .botao-contato i {
   margin-right:5px;
 }
-
-
-.logox {
-  text-align: center;
-}
-.logox img {
-  max-width: 250px;
-}
-
 
 #insta-feed {
   display: grid;
