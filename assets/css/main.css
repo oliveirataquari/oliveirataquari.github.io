@@ -764,7 +764,6 @@ section,
 #hero {
   background: url(../img/bg-hero1.jpg) center no-repeat;
   background-size: cover;
- 
 }
 
 .hero {
@@ -807,6 +806,7 @@ section,
 @media (max-width: 768px) {
   .hero {
     margin-top: 0px;
+    height: 50vh;
   }
 }
 
