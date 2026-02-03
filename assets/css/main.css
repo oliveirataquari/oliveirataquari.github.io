@@ -3194,3 +3194,9 @@ a.portfolio-details-link,
   width: 100%;
   border-radius: 6px;
 }
+
+@media(min-width: 768px) {
+  .only-mobile {
+    display:none !important;
+  }
+}
