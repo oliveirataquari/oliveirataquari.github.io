@@ -785,7 +785,7 @@ section,
 }
 
 .hero .hero-content h1 .highlight {
-  font-size: 3.3rem;
+  font-size: 4.8rem;
   color: var(--accent-color);
   /* position: relative; */
 }
@@ -1497,7 +1497,9 @@ section,
   background-size:contain; */
   color: #333;
 }
-
+.resume.section {
+  padding-bottom: 0px !important;
+}
 .resume .resume-item {
   margin-bottom: 3rem;
 }
