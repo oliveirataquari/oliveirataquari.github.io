@@ -1498,7 +1498,7 @@ section,
   color: #333;
 }
 .resume.section {
-  padding-bottom: 0px !important;
+  padding-bottom: 0px !important; /* para a mão segurando o celular */
 }
 .resume .resume-item {
   margin-bottom: 3rem;
@@ -3201,4 +3201,10 @@ a.portfolio-details-link,
   .only-mobile {
     display:none !important;
   }
+}
+
+
+.normal b {
+  color:#000 !important;
+  opacity: 1 !important;
 }
