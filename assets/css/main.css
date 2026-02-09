@@ -682,7 +682,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 90px 0;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 80px;
   overflow: clip;
 }
 
@@ -786,7 +786,8 @@ section,
 
 .hero .hero-content h1 .highlight {
   font-size: 4.8rem;
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: var(--amarelo-color);
   /* position: relative; */
 }
 
@@ -1491,7 +1492,7 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
-#resume {
+#resume, #possui {
   background-color: #fff;
   /* background: url(../img/bg-resume1.jpg) no-repeat left bottom #1387C1;
   background-size:contain; */
@@ -2420,7 +2421,8 @@ section,
 }
 
 .portfolio .portfolio-card {
-  background-color: var(--accent-color);
+/*  background-color: var(--accent-color); */
+  background: linear-gradient(to top right, #0b4f73, #1387c1);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
