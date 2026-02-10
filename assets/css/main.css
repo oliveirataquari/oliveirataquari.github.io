@@ -179,22 +179,35 @@ h6 {
   color: var(--heading-color);
 }
 
-.header .header-social-links {
-  padding-right: 15px;
-  font-weight: 800;
+@media(max-width: 768px) {
+  .header .header-social-links {
+    padding-right: 15px;
+  }
 }
 
 .header .header-social-links a {
  /* color: color-mix(in srgb, var(--default-color), transparent 40%); */
-  padding-left: 25px;
+ /* padding-left: 25px; */
   display: inline-block;
   transition: 0.3s;
   font-size: 18px;
   font-weight: bold;
+  background-color: var(--accent-color);
+  color:#fff;
+  padding: 7px 12px;
+  border-radius: 50%;
+}
+
+@media(max-width: 768px) {
+  .header .header-social-links a {
+    padding: 4px 8px;
+    font-size: 16px;
+  }
 }
 
 .header .header-social-links a:hover {
   color: #000;
+  background-color: var(--amarelo-color);
 }
 
 .header .header-social-links a i {
@@ -682,7 +695,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 90px 0;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 75px;
   overflow: clip;
 }
 
