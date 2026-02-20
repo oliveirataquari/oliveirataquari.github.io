@@ -3331,3 +3331,36 @@ a.portfolio-details-link,
 .cc-btn {
   margin-right: 50px;
 }
+
+
+.sobmedida {
+ /* background: radial-gradient(circle at center, rgba(255, 203, 23, 0.18) 0%, #101a20 70%); */
+ background: radial-gradient(circle at center, rgba(255, 255, 255, 0.12) 0%, #101a20 60%);
+ /* background: url(../img/bg-sobmedida1.jpg) center no-repeat;
+  background-size:cover; */
+  height:auto;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.sobmedida p {
+  opacity: .7 !important;
+}
+.sob {
+  font-size: 6rem;
+  color: var(--amarelo-color);
+  margin-top: -40px;
+}
+
+
+@media(max-width: 768px) {
+  .sobmedida img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .sob {
+    font-size: 3.8rem;
+    margin-top:-1;
+  }
+}
