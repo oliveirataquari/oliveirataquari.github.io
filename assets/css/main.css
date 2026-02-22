@@ -3328,11 +3328,6 @@ a.portfolio-details-link,
   opacity: 1 !important;
 }
 
-.cc-btn {
-  margin-right: 50px;
-}
-
-
 .sobmedida {
  /* background: radial-gradient(circle at center, rgba(255, 203, 23, 0.18) 0%, #101a20 70%); */
  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.12) 0%, #101a20 60%);
@@ -3364,3 +3359,29 @@ a.portfolio-details-link,
     margin-top:-1;
   }
 }
+
+
+
+/* Osano Cookie */
+.cc-window.cc-bottom {
+  padding: 0;
+}
+
+.cc-btn {
+/*  margin-right: 50px;} */ 
+}
+
+.cc-window.cc-banner {
+  max-width: 1120px;
+  margin: 0 auto;
+  border-top:1px solid rgba(255,255,255,0.2);
+  border-bottom:1px solid rgba(0,0,0,0.7);
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+/*
+
+cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-1671922682 
+
+*/
