@@ -1649,6 +1649,12 @@ section,
   .resume .resume-content {
     padding-left: 1rem !important;
   }
+  .resume .resume-content {
+    margin:0 auto;
+  }
+  .resume .resume-content img {
+    max-width: 240px;
+  }
 
   .resume article::before {
     left: -2rem !important;
@@ -3368,17 +3374,20 @@ a.portfolio-details-link,
 }
 
 .cc-btn {
-/*  margin-right: 50px;} */ 
+  /* float: left !important; */
 }
 
 .cc-window.cc-banner {
-  max-width: 1120px;
+  max-width: 80%;
   margin: 0 auto;
   border-top:1px solid rgba(255,255,255,0.2);
   border-bottom:1px solid rgba(0,0,0,0.7);
   margin-bottom: 1rem;
   border-radius: 15px;
+  text-align: center;
 }
+
+
 
 /*
 
