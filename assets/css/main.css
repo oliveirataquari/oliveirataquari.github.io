@@ -3283,7 +3283,7 @@ section,
 .hide,
 a.portfolio-details-link,
 #resume .resume-title,
-#services .service-link
+.service-link
 {
 	display:none !important;
 }
