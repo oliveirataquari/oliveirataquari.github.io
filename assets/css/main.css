@@ -1514,6 +1514,15 @@ section,
 .resume.section {
   padding-bottom: 0px !important; /* para a mão segurando o celular */
 }
+
+.resume span {
+  font-size: 2.5rem;
+  font-weight: 300;
+  background: linear-gradient(to right, #333,#d9d9d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .resume .resume-item {
   margin-bottom: 3rem;
 }
