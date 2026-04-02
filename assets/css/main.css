@@ -3648,7 +3648,7 @@ a.portfolio-details-link,
 
 .sobmedida {
  /* background: radial-gradient(circle at center, rgba(255, 203, 23, 0.18) 0%, #101a20 70%); */
- background: radial-gradient(circle at center, rgba(255, 255, 255, 0.12) 0%, #101a20 60%);
+ background: radial-gradient(circle at center, rgba(255, 255, 255, 0.12) 0%, #111 80%);
  /* background: url(../img/bg-sobmedida1.jpg) center no-repeat;
   background-size:cover; */
   height:auto;
