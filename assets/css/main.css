@@ -1664,7 +1664,6 @@ section,
   .resume .resume-content img {
     max-width: 240px;
   }
-
   .resume article::before {
     left: -2rem !important;
   }
@@ -1681,8 +1680,20 @@ section,
 .resume h3,
 .resume-content h4,
 .resume p {
-  color:#333 !important;
+  color:#333;
 } 
+
+.resume-content h2 {
+  color:var(--amarelo-color);
+  font-size: 5rem;
+}
+@media (max-width: 768px) {
+  .resume-content h2 {
+    color:var(--amarelo-color);
+    font-size: 3.8rem;
+  }
+}
+
 .education-item h5,
 .education-item .institution {
   display:none !important;
@@ -3677,32 +3688,3 @@ a.portfolio-details-link,
     margin-top:-1;
   }
 }
-
-
-
-/* Osano Cookie */
-.cc-window.cc-bottom {
-  padding: 0;
-}
-
-.cc-btn {
-  /* float: left !important; */
-}
-
-.cc-window.cc-banner {
-  max-width: 80%;
-  margin: 0 auto;
-  border-top:1px solid rgba(255,255,255,0.2);
-  border-bottom:1px solid rgba(0,0,0,0.7);
-  margin-bottom: 1rem;
-  border-radius: 15px;
-  text-align: center;
-}
-
-
-
-/*
-
-cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-1671922682 
-
-*/
