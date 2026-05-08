@@ -177,6 +177,12 @@
         filter: filter,
         sortBy: sort
       });
+
+      // Corrige BUG de não abrir o restante da ppágina abaixo da seção portfólio.:
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+  
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
