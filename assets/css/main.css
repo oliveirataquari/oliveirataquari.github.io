@@ -1516,11 +1516,12 @@ section,
 }
 
 .resume span {
-  font-size: 2.5rem;
-  font-weight: 300;
-  background: linear-gradient(to right, #333,#d9d9d9);
+  font-size: 2.8rem;
+  font-weight: 400;
+  /* background: linear-gradient(to right, #333,#d9d9d9);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: var(--amarelo-color);
 }
 
 .resume .resume-item {
@@ -1715,7 +1716,8 @@ section,
   flex-wrap: wrap;
 }
 
-.resume .btn-primary-custom {
+.btn-primary-custom,
+.btn-primary {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 12px 30px;
@@ -1725,9 +1727,11 @@ section,
   align-items: center;
   gap: 8px;
   transition: 0.3s;
+  border: none !important;
 }
 
-.resume .btn-primary-custom:hover {
+.btn-primary-custom:hover,
+.btn-primary:hover {
   background: var(--accent-color);
   transform: translateY(-2px);
 }
@@ -1790,7 +1794,8 @@ section,
   margin-top: 2rem;;
 }
 
-.resume .btn-primary-custom {
+.resume .btn-primary-custom,
+.resume .btn-primary {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 12px 30px;
@@ -1801,6 +1806,8 @@ section,
   gap: 8px;
   transition: 0.3s;
 }
+
+
 
 
 
@@ -3220,7 +3227,7 @@ section,
   top: -0.6em;
   position: relative;
   margin-right: 2px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .pricing .price-card .card-head .price-wrap .price.price-monthly,
@@ -3278,6 +3285,10 @@ section,
 .pricing .price-card .cta .btn-choose:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
+}
+
+.pricing .price-card .cta .btn-choose i {
+  margin-right: 5px;
 }
 
 .pricing .pricing-toggle-container~.row .price-card .price-monthly {
@@ -3340,11 +3351,15 @@ section,
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
+.faq {
+  background-color: #fff;
+}
 .faq .faq-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
+  color:#444;
 }
 
 .faq .faq-description {
@@ -3358,13 +3373,15 @@ section,
 }
 
 .faq .faq-container .faq-item {
-  background-color: var(--surface-color);
-  background-color: rgba(255, 255, 255, 0.08);
+  /* background-color: var(--surface-color); */
+  background-color: #F5F2EF;
+  /* background-color: rgba(255, 255, 255, 0.08); */
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 10px;
   overflow: hidden;
+  color:#333;
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -3383,7 +3400,7 @@ section,
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  
   padding-right: 5px;
 }
 
@@ -3402,6 +3419,7 @@ section,
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
+  color: #333;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
@@ -3419,7 +3437,7 @@ section,
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -3432,6 +3450,11 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
+}
+
+
+.faq .faq-container h3 {
+  color:#333;  
 }
 
 
@@ -3688,3 +3711,6 @@ a.portfolio-details-link,
     margin-top:-1;
   }
 }
+
+
+
