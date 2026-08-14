@@ -3419,7 +3419,7 @@ section,
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
-  color: #333;
+  opacity: .7;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
