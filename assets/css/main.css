@@ -3657,17 +3657,6 @@ a.portfolio-details-link,
   margin-right:5px;
 }
 
-#insta-feed {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-#insta-feed img {
-  width: 100%;
-  border-radius: 6px;
-}
-
 @media(min-width: 768px) {
   .only-mobile {
     display:none !important;
@@ -3713,4 +3702,16 @@ a.portfolio-details-link,
 }
 
 
+/* Instagram Feed Oficial */
+.instagram-feed-item {
+  aspect-ratio: 4 / 5;
+  background: #f2f2f2;
+}
 
+.instagram-feed-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}

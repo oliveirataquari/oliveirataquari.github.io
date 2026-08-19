@@ -1,10 +1,6 @@
 const INSTAGRAM_FEED_CONFIG = {
   api: "https://instagram-feed-api-chi.vercel.app/api/instagram",
-
   limit: 6,
-
-  // Exemplo: "portfolio"
-  // Deixe vazio para mostrar todos os posts.
   tag: ""
 };
 
@@ -19,17 +15,11 @@ async function carregarInstagramFeed() {
     const params = new URLSearchParams();
 
     if (INSTAGRAM_FEED_CONFIG.limit) {
-      params.set(
-        "limit",
-        INSTAGRAM_FEED_CONFIG.limit
-      );
+      params.set("limit", INSTAGRAM_FEED_CONFIG.limit);
     }
 
     if (INSTAGRAM_FEED_CONFIG.tag) {
-      params.set(
-        "tag",
-        INSTAGRAM_FEED_CONFIG.tag
-      );
+      params.set("tag", INSTAGRAM_FEED_CONFIG.tag);
     }
 
     const url =
@@ -58,12 +48,12 @@ async function carregarInstagramFeed() {
           href="${post.url}"
           target="_blank"
           rel="noopener noreferrer"
-          class="d-block"
+          class="instagram-feed-item d-block overflow-hidden"
         >
           <img
             src="${post.image}"
             alt="Publicação do Instagram"
-            class="img-fluid w-100"
+            class="instagram-feed-image"
             loading="lazy"
           >
         </a>
