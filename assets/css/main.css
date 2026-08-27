@@ -1686,11 +1686,10 @@ section,
 
 .resume-content h2 {
   color:var(--amarelo-color);
-  font-size: 5rem;
+  font-size: 2.8rem;
 }
 @media (max-width: 768px) {
   .resume-content h2 {
-    color:var(--amarelo-color);
     font-size: 3.8rem;
   }
 }
